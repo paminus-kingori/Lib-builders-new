@@ -1,0 +1,209 @@
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.3rem;
+    z-index: 2;
+    top:0;
+}
+
+.equipment-sect{
+    margin-top:4rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+.equipment-sect h2{
+    font-size: 30px;
+    color: var(--greyText);
+    font-weight: 600;
+    margin: 2rem 0;
+    text-align: center;
+}
+.equipment-sect h2{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.wheelbarrow{
+    width:30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.equipments{
+    display: flex;
+   flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects-btn,.send{
+    border: none;
+    padding: 8px 10px;
+    outline: none;
+    border-radius: 4px;
+    background: var(--buttonBlue);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.more-btn{
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 30px;
+    background: var(--kibrown);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 3rem 0;
+}
+.more-btn:hover{
+    background: #ff9767;
+}
+
+
+.equip-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    max-width: 500px;
+    box-shadow: var(--searchShaodw);
+    margin: 10px 0;
+}
+.equip-image{
+    width: 280px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.art-text{
+    margin-bottom: 2rem;
+}
+.equip-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    /* flex-grow: 1; */
+    width: 220px;
+}
+.hire{
+  padding: 4px 10px;
+}
+
+.vision{
+    max-width: 450px;
+    color: white;
+}
+.vision h3{
+    color: white;
+    font-weight: 500;
+    margin: 0.5rem;
+
+}
+.vision p{
+    color: white;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: max-content;
+    background: none;
+    color: white; 
+    align-items: center;   
+}
+.message p{
+    align-self: flex-start;
+    color: white;
+}
+.message input, .message textarea{
+    outline: none;
+    border: none;
+    padding: 4px 8px;
+    width: 100%;
+    padding: 6px 10px 3px 8px;
+    width: 100%;
+    margin: 8px;
+    border-radius: 5px;
+}
+.message input::placeholder, .message textarea::placeholder{
+    font-style: italic;
+}
+.send{
+    background: #5054F7;
+    color: white;
+}
+.send:hover{
+    background: #3a3cac;
+}
+.contact span{
+    display: flex;
+    color: white;
+    place-items: center;
+    align-items: center;
+    margin: 20px;
+}
+.contact p{
+    color: white;
+}
+.contact a{
+    text-decoration: none;
+}
+.social-icon{
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes up{
+    0%{
+        transform: translateY(10px);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+
+/* responsiveness */
+
+@media screen and (max-width: 1070px){
+.equipments{
+    grid-template-columns: auto;
+}
+}
+
+@media screen and (max-width: 540px){
+.landing-text h1{
+    font-size: 40px;
+}
+.projects-sect{
+    padding: 0 0.5rem;
+}
+.equip-card{
+    width: 300px;
+}
+.equip-image{
+    border-radius: 0px 0px 0 0;
+    margin-top: 6px;
+}
+footer{
+    padding:2rem 1rem;
+    background: #3FAAF5;
+    background-size: contain;
+    
+}
+.message{
+    margin: 1rem 0;
+}
+.vision h3{
+    text-align: center;
+}
+}
