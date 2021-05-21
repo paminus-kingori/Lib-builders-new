@@ -113,7 +113,7 @@ nav a{
 
 }
 .links a:hover .icon{
-    filter: invert(52%) sepia(18%) saturate(2505%) hue-rotate(167deg) brightness(98%) contrast(95%);
+    filter: invert(100%) sepia(0%) saturate(611%) hue-rotate(257deg) brightness(108%) contrast(100%);
 }
 .pro-link{
     position: relative;
@@ -169,8 +169,9 @@ z-index: 20;
 
 footer{
     color: white;
-    padding-top:8rem ;
-    display: flex;
+    padding-top: 4rem;
+    margin-top: 2rem;
+      display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     align-items: center;
@@ -184,6 +185,7 @@ footer{
 .vision{
     max-width: 450px;
     color: white;
+    align-self: flex-end;
 }
 .vision h3{
     color: white;

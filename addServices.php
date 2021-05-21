@@ -99,7 +99,7 @@ $result=mysqli_query($db,"SELECT *FROM project"); ?>
  }
 
 </style>
-<table style="margin-left: 25%;font-size: 9px;font-family: sans-serif;color: green;">
+<table style="">
   <thead style="background-color: orange;">
     <tr>
       <th>Count</th>
@@ -124,7 +124,7 @@ $result=mysqli_query($db,"SELECT *FROM project"); ?>
                <td><?php echo $row['end_date']; ?></td>
                  <td><?php echo $row['category_id']; ?></td>
                      <td><div class="el-card-item"style="box-shadow: 0px 1px 5px #bbbbbb;">
-                    <div class="el-card-avatar el-overlay-1"><a href="../components/editProfile.php?service_Id=<?php echo $row['service_Id'];?>" class= "edit-btn"> <img  style="width:30px; height: 20px; " src="http://localhost/ProjectTour/public/images/<?php echo $row['image'];?>" /></a></div></div></td>
+                    <div class="el-card-avatar el-overlay-1"><a href="../components/editProfile.php?service_Id=<?php echo $row['service_Id'];?>" class= "edit-btn"> <img  style="width:50px; height: 40px; " src="http://localhost/ProjectTour/public/images/<?php echo $row['image'];?>" /></a></div></div></td>
                <td><a href="EditServices.php?edit=<?php echo $row['service_Id'];?>" class= "edit-btn"> <img src="../public/images/icon_content_small.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;"></a></td>
                <td><a href="deleteService.php?service_Id=<?php echo $row['service_Id'];?>" class= "edit-btn"> <img src="../public/images/action_delete.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;"></a></td>
              </tr>

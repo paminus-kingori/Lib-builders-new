@@ -56,7 +56,7 @@ $count = ($result1['total']+1 );
     <nav style="background: #FF7435;">
         <div class="over"></div>
         <span class="logo">
-            <img src="images/LIb.jpg" alt="logo image" class="logo-image">
+        <img src="images/lib-logo-no-bg.png" alt="logo image" class="logo-image">
             <article>
             <p>Lib Home</p>
             <p>Builders</p>
@@ -66,7 +66,7 @@ $count = ($result1['total']+1 );
         <img src="icons/menu-svgrepo-com.svg" alt="menu" class="menu-icon mobile">
 
         <span class="links">
-            <a href="homepage.php#top">
+            <a href="index.php#top">
                 <img src="icons/homepage.svg" alt="home" class="icon">
                 Home
             </a>

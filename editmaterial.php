@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="../css/User.css">
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/add.css">
+
     <title>View User</title>
 </head>
 <body>
@@ -57,7 +59,11 @@ form{
 
     <h4> Category Information</h4><hr>
     <input type="hidden" name="rawmat_id" value="<?php echo $rawmat_id ?>">
-       <a href="#"> <img src="icons/icon_edit.png" alt="image" class="photo" style="width: 50px; height: 50px;border-radius: 300px; margin-top: 3px;"></a><br><h style="font-size: 10px;color:#003366; font-family:  'calibri', Gadget, myriad;font-weight: small;"></a><br>
+       <a href="#"> <img src="icons/icon_edit.png" alt="image" class="photo" style="width: 50px; height: 50px;border-radius: 300px; margin-top: 3px;"></a><br>
+       
+       <!-- <h style="font-size: 10px;color:#003366; font-family:  'calibri', Gadget, myriad;font-weight: small;"> -->
+      
+      </a><br>
         material name:<br><input type="text" name="material_name" value="<?php echo $material_name ?>" class="ed"><br>
     Description:<br><input type="text" name="description" value="<?php echo $description ?>" class="ed"><br>
      Quantity:<br><input type="number" name="quantity" value="<?php echo  $quantity?>" class="ed"><br>

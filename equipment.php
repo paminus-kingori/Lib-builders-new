@@ -45,7 +45,7 @@ echo 'we received your message';
     <nav style="background: #FF7435;">
         <div class="over"></div>
         <span class="logo">
-            <img src="images/LIb.jpg" alt="logo image" class="logo-image">
+        <img src="images/lib-logo-no-bg.png" alt="logo image" class="logo-image">
             <article>
             <p>Lib Home</p>
             <p>Builders</p>
@@ -57,7 +57,7 @@ echo 'we received your message';
 
 
         <span class="links">
-            <a href="homepage.html#top">
+            <a href="index.php">
                 <img src="icons/homepage.svg" alt="home" class="icon">
                 Home
             </a>

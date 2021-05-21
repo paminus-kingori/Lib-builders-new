@@ -56,10 +56,21 @@ form{
 
 <form action="EditAdminExec.php" method="post" >
 
-    <h4> ADMIN Information</h4><hr>
+    <h4> ADMIN Information</h4>
+    <hr>
     <input type="hidden" name="username" value="<?php echo $username ?>">
-       <a href="#"> <img src="icon/icon_edit.png" alt="image" class="photo" style="width: 50px; height: 50px;border-radius: 300px; margin-top: 3px;"></a><br><h style="font-size: 10px;color:#003366; font-family:  'calibri', Gadget, myriad;font-weight: small;"></a><br>
-        First Name:<br><input type="text" name="firstname" value="<?php echo $firstname ?>" class="ed"><br>
+       <a href="#"> 
+         <img src="icon/icon_edit.png" alt="image" class="photo" style="width: 50px; height: 50px;border-radius: 300px; margin-top: 3px;"></a>
+         <br>
+         <!-- <h style="font-size: 10px;
+         color:#003366;
+          font-family:'calibri', Gadget, myriad;
+         font-weight: small;"> -->
+        </a>
+        <br>
+        First Name:<br>
+        <input type="text" name="firstname" value="<?php echo $firstname ?>" class="ed">
+        <br>
     Last Name:<br><input type="text" name="lastname" value="<?php echo $lastname ?>" class="ed"><br>
     Password:<br><input type="password" name="password" value="<?php echo  $password?>" class="ed"><br>
   Role:<br><input type="text" name="role" value="<?php echo $role?>" class="ed"><br>

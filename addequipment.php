@@ -83,12 +83,12 @@ $count = ($result1['total']+1 );
 
 
  <?php if(isset($_session['message'])): ?>
- <div class ='msg' style="width: 70%; margin-left: 10%; text-align: center;">
+ <div class ='msg' style="">
   <?php
   echo $_session['message'];
   unset($_session['message']);
   ?>
-  <img src="icons/check_action.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;">
+  <img src="icons/check_action.gif" alt="image" class="photo" style="">
 </div>
 
 <?php endif ?>
@@ -100,22 +100,22 @@ $result=mysqli_query($db,"SELECT *FROM equipment"); ?>
   background-color: #f2f2f2;
  }
  tr:nth-child(even):hover{
-  background-color: orange;
+  background-color: #FF7435;
  }
  tr:nth-child(odd):hover{
-  background-color: orange;
+  background-color: #FF7435;
  }
 
 </style>
 <div class="print_content" name="print_content" id="print_content">
-<div class="header" style="margin-left:15%;color: orange; width: 70%; text-align: center; background: grey;height: 5%;">YOUR Equipments</div>
-<span class="search-sect"style="position: right;margin-left: 55%;box-shadow: none;border:1px solid grey;margin-top: 5px;">
+<div class="header" style="">YOUR Equipments</div>
+<span class="search-sect"style="">
                 <input type="text" name="searchbar" onkeyup="myFunction()" id="searchbar" class="searchbar " placeholder="Search By ID" >
                 <a href="javascript:Clickheretoprint()" style="text-decoration: none;"> Print</a>
                 
         </span><br>
-<table style="margin-left:15%;font-size: 9px;font-family: sans-serif;color: black; width: 70%;margin-top: ;" name="myTable" id="myTable">
-  <thead style="background-color: orange;">
+<table style="" name="myTable" id="myTable">
+  <thead style="">
     <tr>
      
        <th>Equpment Id</th>
@@ -142,8 +142,8 @@ $result=mysqli_query($db,"SELECT *FROM equipment"); ?>
               
                  <td><?php echo $row['category_id']; ?></td>
                      <td><div class="el-card-item"style="box-shadow: 0px 1px 5px #bbbbbb;">
-                    <div class="el-card-avatar el-overlay-1"><a href="editEprofile.php?service_Id=<?php echo $row['rawequ_id'];?>" class= "edit-btn"> <img  style="width:30px; height: 20px; " src="http://localhost/dun3//images/<?php echo $row['profile_pic'];?>" /></a></div></div></td>
-               <td><a href="EditEquipment.php?edit=<?php echo $row['rawequ_id'];?>" class= "edit-btn"> <img src="icons/icon_content_small.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;"></a></td>
+                    <div class="el-card-avatar el-overlay-1"><a href="editEprofile.php?service_Id=<?php echo $row['rawequ_id'];?>" class= "edit-btn"> <img  style="width:50px; height: 40px; " src="http://localhost/dun3//images/<?php echo $row['profile_pic'];?>" /></a></div></div></td>
+               <td><a href="EditEquipment.php?edit=<?php echo $row['rawequ_id'];?>" class= "edit-btn"> <img src="icons/icon_content_small.gif" alt="image" class="photo" style="width: 30px; height: 30px;border-radius: 300px; margin-top: 1px;"></a></td>
                <td><a href="deleteEquipment.php?service_Id=<?php echo $row['rawequ_id'];?>" class= "edit-btn"> <img src="icons/action_delete.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;"></a></td>
              </tr>
            <?php }?>

@@ -119,22 +119,22 @@ $result=mysqli_query($con,"SELECT *FROM transaction"); ?>
   background-color: #f2f2f2;
  }
  tr:nth-child(even):hover{
-  background-color: orange;
+  background-color: #FF7435;
  }
  tr:nth-child(odd):hover{
-  background-color: orange;
+  background-color: #FF7435;
  }
 
 </style>
-<div class="header" style="margin-left:15%;color: orange; width: 70%; text-align: center; background: grey;height: 5%;">YOUR TRANSACTIONS</div>
-<div class="print_content" name="print_content" id="print_content" style="border:1px solid ;width: 90%;margin-left: 9%;margin-top: 3%;padding:5px;">
-<span class="search-sect"style="position: right;margin-left: 55%;box-shadow: none;border:1px solid grey;margin-top: 5px;">
+<div class="header" style="">YOUR TRANSACTIONS</div>
+<div class="print_content" name="print_content" id="print_content" style="">
+<span class="search-sect"style="">
                 <input type="text" name="searchbar" onkeyup="myFunction()" id="searchbar" class="searchbar " placeholder="Search By ID" >
                 <a href="javascript:Clickheretoprint()" style="text-decoration: none;"> Print</a>
                 
         </span><br>
-<table  id="myTable" style="margin-left:5%;font-size: 9px;font-family: sans-serif;color: black; width: 90%;margin-top: 5%;">
-  <thead style="background-color: orange;">
+<table  id="myTable" style="">
+  <thead style="">
     <tr style="font-weight: bold;">
      
       

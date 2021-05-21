@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="../css/User.css">
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/add.css">
+
     <title>View User</title>
 </head>
 <body>
@@ -56,7 +58,11 @@ form{
 
     <h4> Equipment Information</h4><hr>
     <input type="hidden" name="rawequ_id" value="<?php echo $rawequ_id ?>">
-       <a href="#"> <img src="../public/images/icon_edit.png" alt="image" class="photo" style="width: 50px; height: 50px;border-radius: 300px; margin-top: 3px;"></a><br><h style="font-size: 10px;color:#003366; font-family:  'calibri', Gadget, myriad;font-weight: small;"></a><br>
+       <a href="#"> <img src="../public/images/icon_edit.png" alt="image" class="photo" style="width: 50px; height: 50px;border-radius: 300px; margin-top: 3px;"></a><br>
+       
+       <!-- <h style="font-size: 10px;color:#003366; font-family:  'calibri', Gadget, myriad;font-weight: small;"> -->
+    
+    </a><br>
         Equipment Name:<br><input type="text" name="equipment_name" value="<?php echo $equipment_name ?>" class="ed"><br>
     Description:<br><input type="text" name="description" value="<?php echo $description ?>" class="ed"><br>
     Unit Price:<br><input type="text" name="unit_price" value="<?php echo  $unit_price?>" class="ed"><br>

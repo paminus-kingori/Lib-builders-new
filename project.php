@@ -67,7 +67,7 @@ $count = ($result1['total']+1 );
 
 
         <span class="links">
-            <a href="homepage.php#top">
+            <a href="index.php#top">
                 <img src="icons/homepage.svg" alt="home" class="icon">
                 Home
             </a>

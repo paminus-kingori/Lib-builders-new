@@ -71,7 +71,7 @@ $count = ($result1['total']+1 );
 
   <title></title>
 </head>
-<body style="background-color: white;">
+<body>
 
 
  <?php if(isset($_session['message'])): ?>
@@ -80,7 +80,7 @@ $count = ($result1['total']+1 );
   echo $_session['message'];
   unset($_session['message']);
   ?>
-  <img src="public/images/icon_success1.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;">
+  <img src="public/images/icon_success1.gif" alt="image" class="photo" style="">
 </div>
 
 <?php endif ?>
@@ -92,22 +92,22 @@ $result=mysqli_query($db,"SELECT *FROM article"); ?>
   background-color: #f2f2f2;
  }
  tr:nth-child(even):hover{
-  background-color: orange;
+  background-color: #FF7435;
  }
  tr:nth-child(odd):hover{
-  background-color: orange;
+  background-color: #FF7435;
  }
 
 </style>
-<div class="header" style="margin-left:10%;color: orange; width: 70%; text-align: center; background: grey;height: 5%;">YOUR ARTICLES</div>
-<div class="print_content" name="print_content" id="print_content" style="border:1px solid ;width: 90%;margin-left: 9%;margin-top: 3%;padding:5px;">
-<span class="search-sect"style="position: right;margin-left: 55%;box-shadow: none;border:1px solid grey;margin-top: 5px;">
+<div class="header" style="">YOUR ARTICLES</div>
+<div class="print_content" name="print_content" id="print_content" style="">
+<span class="search-sect"style="">
                 <input type="text" name="searchbar" onkeyup="myFunction()" id="searchbar" class="searchbar " placeholder="Search By ID" >
                 <a href="javascript:Clickheretoprint()" style="text-decoration: none;"> Print</a>
                 
         </span><br>
-<table  id="myTable" style="margin-left:10%;font-size: 9px;font-family: sans-serif;color: green; width: 70%;margin-top: 5%;">
-  <thead style="background-color: orange;">
+<table  id="myTable" style="">
+  <thead style="">
     <tr>
      
        <th>Article Id</th>
@@ -132,8 +132,8 @@ $result=mysqli_query($db,"SELECT *FROM article"); ?>
                <td><?php echo $row['source_name']; ?></td>
                 
                      <td><div class="el-card-item"style="box-shadow: 0px 1px 5px #bbbbbb;">
-                    <div class="el-card-avatar el-overlay-1"><a href="EditAProfile.php?service_Id=<?php echo $row['count_id'];?>" class= "edit-btn"> <img  style="width:30px; height: 20px; " src="http://localhost/dun3//images/<?php echo $row['profile_pic'];?>" /></a></div></div></td>
-               <td><a href="Editarticle.php?edit=<?php echo $row['count_id'];?>" class= "edit-btn"> <img src="./icons/icon_content_small.gif" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;"></a></td>
+                    <div class="el-card-avatar el-overlay-1"><a href="EditAProfile.php?service_Id=<?php echo $row['count_id'];?>" class= "edit-btn"> <img  style="width:50px; height: 40px; " src="http://localhost/dun3//images/<?php echo $row['profile_pic'];?>" /></a></div></div></td>
+               <td><a href="Editarticle.php?edit=<?php echo $row['count_id'];?>" class= "edit-btn"> <img src="./icons/icon_content_small.gif" alt="image" class="photo" style="width: 30px; height: 30px;border-radius: 300px; margin-top: 1px;"></a></td>
                <td><a href="deletearticle.php?service_Id=<?php echo $row['count_id'];?>" class= "edit-btn"> <img src="./icons/delete.svg" alt="image" class="photo" style="width: 20px; height: 20px;border-radius: 300px; margin-top: 1px;"></a></td>
              </tr>
            <?php }?>
@@ -202,12 +202,12 @@ $result=mysqli_query($db,"SELECT *FROM article"); ?>
                 <select name="status" class="form-control"required >
                       
                         
-                       <option>finished</option>
-                       <option>ongoing</option>
+                       <option>Finished</option>
+                       <option>Ongoing</option>
                        <option>Active</option>
                    
                        
-                       <option>ongoing</option>
+                       <option>Ongoing</option>
                    </select>
             
         </div>
